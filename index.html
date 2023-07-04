@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <style>
+        .attribution {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <p id="mainwarningMessage" style="display: none; color: red;">Please enter all the values</p>
+            <div class="input-container">
+                <section>
+                    <h5>DAY</h5>
+                    <input type="number" min="1" max="31" placeholder="DD" class="date">
+                    <p id="warningMessage" style="display: none; color: red;">Must be a valid day</p>
+                </section>
+                <section>
+                    <h5>MONTH</h5>
+                    <input type="number" min="1" max="12" placeholder="MM" class="month">
+                    <p id="warningMessage1" style="display: none; color: red;">Must be a valid month</p>
+                </section>
+                <section>
+                    <h5>YEAR</h5>
+                    <input type="number" min="1950" max="2023" placeholder="YYYY" class="year">
+                    <p id="warningMessage2" style="display: none; color: red;">Must be in the past</p>
+                </section>
+            </div>
+            <div class="middle-container">
+                <hr>
+                <button>
+                    <img src="images/icon-arrow.svg" alt="">
+                </button>
+                <hr id="secondLine">
+            </div>
+            <div class="display-container">
+                <p class="year-display">
+                    <span class="years">_ _ </span> years
+                </p>
+                <p class="month-display">
+                    <span class="months">_ _ </span> months
+                </p>
+                <p class="days-display">
+                    <span class="days">_ _ </span> days
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/firdos-shaik-551b4222b/">Shaik Firdos</a>.
+    </div>
+
+    <script src="index.js" charset="utf-8" defer></script>
+</body>
+
+</html>

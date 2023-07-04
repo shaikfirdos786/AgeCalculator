@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFEAD2;
+}
+
+main{
+    margin-bottom: 10px;
+}
+
+.main-container {
+  background-color: white;
+  border-radius: 20px 20px 120px 20px;
+  padding: 0 20px 10px 20px;
+}
+
+input {
+  height: 60px;
+  width: 120px;
+  margin-right: 30px;
+  text-align: center;
+  border: 3px solid #555;
+  font-size: 30px;
+}
+
+.middle-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+  padding-right: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  flex: 1;
+  border: none;
+  height: 2px;
+  background: black;
+}
+
+.input-container {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+#mainwarningMessage {
+  font-size: 12px;
+}
+
+p {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+button {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(255, 96%, 61%);
+}
+
+section > p {
+  font-size: 15px;
+}
+
+#secondLine {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .middle-container {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .input-container {
+    padding-right: 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #secondLine {
+    display: block;
+    height: 2px;
+    background: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .main-container {
+    width: 300px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 40px;
+    border-radius: 10px 10px 60px 10px;
+    width: 80%;
+  }
+
+  .display-container {
+    padding-left: 10px;
+  }
+
+  input {
+    width: 60px;
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
